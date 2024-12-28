@@ -1,0 +1,16 @@
+{% extends "layout.html" %} 
+{% block title%}
+Homepage
+{% endblock %} 
+{% block content %}
+<h1>Chai aur code | Home page</h1>
+
+{% for chai in chais  %}
+    <div class="chai">
+        <img src="{{chai.image}}" alt="">
+        <h3>{{chai.name}}</h3>
+    </div>
+{% endfor %}
+
+{% endblock %}
+
